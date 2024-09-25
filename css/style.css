@@ -1,0 +1,160 @@
+.clients a {
+    display: block;
+    width: 120px; /* Adjust based on your design */
+    height: 100px; /* Adjust based on your design */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto; /* Center align logos */
+  }
+
+
+
+/* Hides scrollbar for WebKit browsers (Chrome, Safari) */
+    body::-webkit-scrollbar {
+       display: none;
+     }
+
+        .header-buttons-right {
+            position: absolute;
+            right: 140px; /* Adjust as needed */
+            top: 50%; /* Vertically align */
+            transform: translateY(-50%);
+        }
+        
+        /* Style for the primary button */
+        .btn-primary, .btn-secondary {
+            width: 120px; /* Adjust width */
+            height: 38px; /* Set fixed height for consistency */
+            padding: 0; /* Remove padding if height is fixed */
+            line-height: 35px; /* Align text vertically by matching line-height with height */
+            text-align: center; /* Center the text horizontally */
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+        
+        /* Hover effect for buttons */
+        .btn-primary:hover, .btn-secondary:hover {
+            color: #fff;
+            background-color: #fcb316; /* Darker shade on hover */
+        }
+         
+        
+        /* Hide the buttons on mobile and tablet view */
+        @media screen and (max-width: 1024px) {
+            .header-buttons-right {
+                display: none;
+            }
+        }
+        
+        /* Hide "Services" and "Portfolio" links on desktop view */
+        @media screen and (min-width: 1025px) {
+            .header-nav__list #button-s {
+                display: none;
+            }
+        }
+        .home-social {
+            position: fixed; /* Fix the position on the screen */
+            bottom: 20px; /* Adjust the position from the bottom of the screen */
+            left: 20px; /* Adjust the position from the left of the screen */
+            z-index: 1000; /* Ensure it stays on top of other elements */
+        }
+        
+        .home-social li {
+            list-style: none;
+            margin-bottom: 10px; /* Add some spacing between icons */
+        }
+        
+        .home-social a {
+            text-decoration: none;
+            opacity: 0.3;
+            color: rgba(241, 238, 233, 1); 
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .home-social a i {
+            margin-right: 8px; /* Space between the icon and text */
+            font-size: 20px; /* Icon size */
+        }
+        
+        .home-social a:hover {
+            opacity: 1;
+            color: #FBB315; /* Change color on hover */
+        }
+        
+        .home-social a span {
+            display: none; /* Hide text if you only want the icons visible */
+        }
+        /* Hide the social icons on desktop view */
+@media screen and (min-width: 1025px) {
+    .header-nav__social {
+        display: none;
+    }
+}
+
+/* Show the social icons on tablet and mobile view */
+@media screen and (max-width: 1024px) {
+    .header-nav__social {
+        display: flex; /* or block if you prefer a vertical layout */
+        justify-content: center; /* Center them horizontally */
+    }
+
+    .header-nav__social li {
+        margin: 0 10px; /* Add space between social icons */
+    }
+}
+
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the section without distortion */
+    z-index: -1; /* Places the video behind the content */
+}
+
+
+
+        
+/* home button */
+/* Base button style */
+.smoothscroll.btn.btn--large {
+    /* Add your default styles here */
+    background-color: initial; /* or your desired default background color */
+    color: #fff; /* or your desired default text color */
+  
+   
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.smoothscroll.btn.btn--large:hover {
+    background-color: #FBB315;
+    color: #fff; /* Change text color on hover if desired */
+}
+
+
+.foot-img{
+    background-image: url(../image-footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+

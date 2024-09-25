@@ -1,0 +1,57 @@
+/* about */
+.breadcrumb-container {
+    margin: 20px 0; /* Space above and below the breadcrumb */
+    /* align-items: center; */
+}
+
+.breadcrumb {
+    display: flex; /* Use flexbox for better alignment */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    justify-content: center;
+
+}
+.breadcrumb-item {
+    font-size: 20px; /* Default font size */
+    color: #ffffff; /* White color for breadcrumb items */
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 10px; /* Space between breadcrumb items */
+    color: #ffffff; /* Color of the separator */
+}
+
+.breadcrumb-item a {
+    color: #f8f9fa; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ffd700; /* Gold color on hover */
+}
+
+.breadcrumb-item.active {
+    color: #ffd700; /* Gold color for the active breadcrumb item */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .breadcrumb-item {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding: 0 5px; /* Less spacing on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-item {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding: 0 3px; /* Minimal spacing on very small screens */
+    }
+}
